@@ -15,7 +15,9 @@ steps:
     SonarCloud: 'sonarcloud'
     organization: 'sk1810'
     scannerMode: 'CLI'
-    configMode: 'file'
+    configMode: 'manual'
+    cliProjectKey: 'Sk1810_create-react-app'
+    cliSources: '.'
 - task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
   inputs:
