@@ -19,6 +19,9 @@ steps:
     cliProjectKey: 'test'
     cliProjectName: 'test'
     cliSources: '.'
+    extraProperties: |
+      # Encoding of the source code. Default is default system encoding
+      sonar.sourceEncoding=UTF-8
 - task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
   inputs:
