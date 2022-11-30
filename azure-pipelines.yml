@@ -15,13 +15,7 @@ steps:
     SonarCloud: 'sonarcloud'
     organization: 'sk1810'
     scannerMode: 'CLI'
-    configMode: 'manual'
-    cliProjectKey: 'test'
-    cliProjectName: 'test'
-    cliSources: '.'
-    extraProperties: |
-      # Encoding of the source code. Default is default system encoding
-      sonar.sourceEncoding=UTF-8
+    configMode: 'file'
 - task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
   inputs:
